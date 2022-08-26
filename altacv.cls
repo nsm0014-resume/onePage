@@ -214,7 +214,7 @@
       \includegraphics[width=\linewidth]{#2}
     \else
 % Fork: The photo image has modified to include a border around it, which color is aligned to document's theme
-      \tikz\filldraw[color=headingrule, fill overzoom image={#2}, ultra thick](-1,0) circle[radius=0.5\linewidth];
+      \tikz\filldraw[color=picColor, fill overzoom image={#2}, ultra thick](-1,0) circle[radius=0.5\linewidth];
     \fi%
   \end{minipage}%
 }

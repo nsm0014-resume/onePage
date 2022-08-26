@@ -35,7 +35,7 @@
 %% See http://texdoc.net/pkg/fontawesome5 and http://texdoc.net/pkg/academicons for full list of symbols. You MUST compile with XeLaTeX or LuaLaTeX if you want to use academicons.
 
 % Change the page layout if you need to
-\geometry{left=1.2cm,right=1.2cm,top=1cm,bottom=0.5cm,columnsep=0.75cm}
+\geometry{left=1.2cm,right=1.2cm,top=0.75cm,bottom=0.75cm,columnsep=0.75cm}
 
 % The paracol package lets you typeset columns of text in parallel
 \usepackage{paracol}
@@ -69,13 +69,14 @@
   \definecolor{ThirdColor}{HTML}{F3890B}
   \definecolor{BodyColor}{HTML}{666666}
   \definecolor{EmphasisColor}{HTML}{2E2E2E}
-  \definecolor{BackgroundColor}{HTML}{E2E2E2}
+  \definecolor{BackgroundColor}{HTML}{ffffff}
 \fi%
 
 \colorlet{name}{PrimaryColor}
 \colorlet{tagline}{PrimaryColor}
 \colorlet{heading}{PrimaryColor}
-\colorlet{headingrule}{ThirdColor}
+\colorlet{headingrule}{BodyColor}
+\colorlet{picColor}{ThirdColor}
 \colorlet{subheading}{SecondaryColor}
 \colorlet{accent}{SecondaryColor}
 \colorlet{emphasis}{EmphasisColor}
@@ -127,7 +128,7 @@
 
 \makecvheader
 %% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
-% \AtBeginEnvironment{itemize}{\small}
+\AtBeginEnvironment{itemize}{\small}
 
 %% Set the left/right column width ratio to 6:4.
 \columnratio{0.25}
@@ -243,57 +244,27 @@
   %% page if the content is too long.
   \switchcolumn
 
-  % ----- ABOUT ME -----
-  \cvsection{About Me}
-  \begin{quote}
-    Aerospace Engineer specializing in modeling and simulation of novel flight vehicles along with GNSS/INS fusion algorithms. Currently developing flight vehicle models with simulated GNSS signal data to enhance sensor fusion techniques.
-  \end{quote}
-  % ----- ABOUT ME -----
-
   % ----- EXPERIENCE -----
   \cvsection{Experience}
 
-  \cvevent{Graduate Research Assistant }{| GPS and Vehicle Dynamics Lab}{Jan 2022 -- Current (Expected Aug 2023)}{Auburn University}
+  \cvevent{Graduate Research Assistant }{| GPS and Vehicle Dynamics Laboratory}{Jan 2022 -- Current (Expected Aug 2023)}{Auburn University}
   \begin{itemize}
-    \item Research and develop navigation and estimation algorithms within MATLAB, C++, and ROS
-    \item Implemented a real-time relative position estimation algorithm for autonomous vehicle convoys in
-          without a GPS reference
-    \item Experienced in Kalman
-          ltering with GPS, IMUs, Ultra-wideband radios, and vehicle models in
-          both simulation and hardware
-    \item Projects: Multi-agent collaborative aerial navigation, IMU on-line alignment and calibration,
-          range-only relative position estimation.
+    \item{Research and develop a collaborative GNSS and LEO satellite constellation program for indoor positioning using MATLAB and C++}
+    \item{Create motion profiles for a wide-range of flight vehicles to work with GNSS/INS sensor fusion algorithms}
   \end{itemize}
   \divider
 
   \cvevent{Graduate Research Assistant }{| Vehicle Systems, Dynamics, and Design Laboratory}{May 2021 -- Dec 2021 }{Auburn University}
   \begin{itemize}
-    \item Developed a generalized parametric sizing tool that optimizes, sizes, and generates conventional and novel flight vehicles
-    \item Analyzed conventional and novel flight vehicle configurations for their aerodynamic capabilities through use of Flightstream
-    \item Created intricate and re-configurable cockpit displays using Adobe Photoshop, Flightgear, and XML providing simplified vehicle operations for next-generation
-          pilots
-    \item Guided an intern through the process of developing a parametric cockpit display design tool using JavaScript and Simulink
-    \item Collaborated with XFS using Linux and Raspberry Pis to extend the capabilities of the re-configurable cockpit displays
-    \item Constructed 2 flight simulators with touch screen controls, simplified vehicle operations, and multiplayer features
-    \item Implemented network interfacing via UDP and TCP for the flight simulator's computer array to communicate with each other
-    \item Presented to a variety of audiences including NASA, U.S. Air Force, and the FAA via regular Zoom meetings and in-house tours
+    \item Developed a generalized parametric sizing tool that optimizes, analyzes, and generates conventional and novel flight vehicles
+    \item Created 4-D, re-configurable cockpit displays using Adobe Photoshop, Flightgear, and XML providing simplified vehicle operations for next-generation pilots
   \end{itemize}
   \divider
 
   \cvevent{Lead Writing Consultant}{| Miller Writing Center}{Aug 2018 -- May 2021}{Auburn University}
   \begin{itemize}
-    \item Led team meetings of 6-8 consultants through a professional development practicum
-    \item Trained new consultants via mock consultations and feedback activities
+    \item Led team meetings of 6-8 consultants through a professional development practicum and trained new consultants via mock consultations and feedback activities
     \item Analyzed clients' writing with directive and non-directive feedback during hour-long appointments
-    \item Evaluated and interviewed applicants as member of the hiring committee
-    \item Participated in regular discussions about writing center theory and practice
-    \item Developed critical thinking strategies on pressing issues such as racism and code-meshing in writing
-  \end{itemize}
-  \cvevent{Undergraduate Research Assistant}{| Polymer Mechanics Laboratory}{Oct 2018 -- Dec 2020}{Auburn University}
-  \begin{itemize}
-    \item Performed trade studies on various reflector designs for use of remote self-folding origami
-    \item Explored the topic of self-activating polymers using the Sun's energy
-    \item Presented to a variety of audiences via symposia and community outreach
   \end{itemize}
   % ----- EXPERIENCE -----
 
@@ -307,22 +278,6 @@
 
   \cvevent{B.S. Aerospace, Aeronautical Engineering }{| Auburn University}{Aug 2017 -- May 2021}{Auburn, Alabama}
   % ----- EDUCATION -----
-
-  % ----- PROJECTS -----
-  \cvsection{Projects}
-  \cvevent{Lead Simulation Engineer Auburn Tiger Racing}{\cvrepo{| \faGithub}{https://github.com/user/repo}\cvrepo{| \faGlobe}{https://repo-demo.com/}}{05 2021 -- 02 2022}{}
-  \begin{itemize}
-    \item Responsible for setting up realistic and functional simulation environment for ATR Indy Lights race-car. Competed in two competitions using proved simulation algorithms
-    \item Work required extensive C++ and Unity development to mimic real world conditions
-  \end{itemize}
-  \divider
-
-  \cvevent{NVIDIA Jet Racer Competition Organizer}{\cvrepo{| \faGitlab}{https://gitlab.com/user/repo}\cvrepo{| \faGlobe}{https://repo-demo.com/}}{01 2022 -- Current}{}
-  \begin{itemize}
-    \item Wrote entire autonomous driving software stack in ROS2 environment from low level PWM to localization and planning
-    \item Guided students through ROS2 development to compete in final competition
-  \end{itemize}
-  % ----- PROJECTS -----
   % ----- PUBLICATIONS -----
   \cvsection{Publications}
 
@@ -330,5 +285,6 @@
 
   \printbibliography[heading=pubtype,title={\printinfo{\faUsers}{Conference Proceedings}},type=inproceedings]
   % ----- PUBLICATIONS -----
+
 \end{paracol}
 \end{document}
