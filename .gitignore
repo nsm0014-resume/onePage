@@ -1,0 +1,9 @@
+# nsm0014-resume/onePage gitignore
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.pdf
+*.synctex.gz
+*.xmpi
