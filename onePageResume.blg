@@ -1,0 +1,18 @@
+[0] Config.pm:311> INFO - This is Biber 2.16
+[0] Config.pm:314> INFO - Logfile is 'onePageResume.blg'
+[91] biber-MSWIN64:340> INFO - === 
+[124] Biber.pm:415> INFO - Reading 'onePageResume.bcf'
+[218] Biber.pm:949> INFO - Using all citekeys in bib section 0
+[231] Biber.pm:4340> INFO - Processing section 0
+[242] Biber.pm:4531> INFO - Looking for bibtex format file 'sample.bib' for section 0
+[290] bibtex.pm:1689> INFO - LaTeX decoding ...
+[297] bibtex.pm:1494> INFO - Found BibTeX data source 'sample.bib'
+[323] Utils.pm:395> WARN - BibTeX subsystem: warning: comma(s) at end of name (removing)
+[323] Utils.pm:395> WARN - BibTeX subsystem: warning: comma(s) at end of name (removing)
+[332] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[333] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[333] Biber.pm:4168> INFO - Sorting list 'ydnt/global//global/global' of type 'entry' with template 'ydnt' and locale 'en-US'
+[333] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
+[335] bbl.pm:654> INFO - Writing 'onePageResume.bbl' with encoding 'UTF-8'
+[337] bbl.pm:757> INFO - Output to onePageResume.bbl
+[337] Biber.pm:128> INFO - WARNINGS: 2

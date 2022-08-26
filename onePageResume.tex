@@ -93,6 +93,8 @@
 \renewcommand{\itemmarker}{{\small\textbullet}}
 \renewcommand{\ratingmarker}{\faCircle}
 
+\input{pubs-authoryear.cfg}
+\addbibresource{sample.bib}
 %% sample.bib contains your publications
 %% \addbibresource{sample.bib}
 
@@ -135,6 +137,10 @@
 \begin{paracol}{2}
   % ----- STRENGTHS -----
   \cvsection{Strengths}
+  \cvtag{Security Clearance (WIP)}
+
+  \medskip
+
   \cvtag{MATLAB/Simulink}
   \cvtag{C++}
   \cvtag{Python}
@@ -249,29 +255,45 @@
 
   \cvevent{Graduate Research Assistant }{| GPS and Vehicle Dynamics Lab}{Jan 2022 -- Current (Expected Aug 2023)}{Auburn University}
   \begin{itemize}
-    \item Designed, implemented and tested ground up simulation environment for autonomous vehicles in Unity 3D for consumer market.
-    \item Designed and implemented custom ROS2 bridge to connect to simulation environment.
-    \item Designed and implemented asset management system using Addressable packages.
+    \item Research and develop navigation and estimation algorithms within MATLAB, C++, and ROS
+    \item Implemented a real-time relative position estimation algorithm for autonomous vehicle convoys in
+          without a GPS reference
+    \item Experienced in Kalman
+          ltering with GPS, IMUs, Ultra-wideband radios, and vehicle models in
+          both simulation and hardware
+    \item Projects: Multi-agent collaborative aerial navigation, IMU on-line alignment and calibration,
+          range-only relative position estimation.
   \end{itemize}
   \divider
 
   \cvevent{Graduate Research Assistant }{| Vehicle Systems, Dynamics, and Design Laboratory}{May 2021 -- Dec 2021 }{Auburn University}
   \begin{itemize}
-    \item Developed custom ROS2 interface for simulation environment to enable vehicle control for use with LG SVL Simulator.
-    \item Designed and implemented realistic sensor models including IMU, GPS, lidar, and camera.
-    \item Briefly analyzed GPS signal performance to characterize threat sources/error.
+    \item Developed a generalized parametric sizing tool that optimizes, sizes, and generates conventional and novel flight vehicles
+    \item Analyzed conventional and novel flight vehicle configurations for their aerodynamic capabilities through use of Flightstream
+    \item Created intricate and re-configurable cockpit displays using Adobe Photoshop, Flightgear, and XML providing simplified vehicle operations for next-generation
+          pilots
+    \item Guided an intern through the process of developing a parametric cockpit display design tool using JavaScript and Simulink
+    \item Collaborated with XFS using Linux and Raspberry Pis to extend the capabilities of the re-configurable cockpit displays
+    \item Constructed 2 flight simulators with touch screen controls, simplified vehicle operations, and multiplayer features
+    \item Implemented network interfacing via UDP and TCP for the flight simulator's computer array to communicate with each other
+    \item Presented to a variety of audiences including NASA, U.S. Air Force, and the FAA via regular Zoom meetings and in-house tours
   \end{itemize}
   \divider
 
   \cvevent{Lead Writing Consultant}{| Miller Writing Center}{Aug 2018 -- May 2021}{Auburn University}
   \begin{itemize}
-    \item Provide experimental results for large scale fuel economy testing in Class 8 trucking
-    \item Provide analysis and recommendations on technology implementation in the current trucking climate
+    \item Led team meetings of 6-8 consultants through a professional development practicum
+    \item Trained new consultants via mock consultations and feedback activities
+    \item Analyzed clients' writing with directive and non-directive feedback during hour-long appointments
+    \item Evaluated and interviewed applicants as member of the hiring committee
+    \item Participated in regular discussions about writing center theory and practice
+    \item Developed critical thinking strategies on pressing issues such as racism and code-meshing in writing
   \end{itemize}
   \cvevent{Undergraduate Research Assistant}{| Polymer Mechanics Laboratory}{Oct 2018 -- Dec 2020}{Auburn University}
   \begin{itemize}
-    \item Provide experimental results for large scale fuel economy testing in Class 8 trucking
-    \item Provide analysis and recommendations on technology implementation in the current trucking climate
+    \item Performed trade studies on various reflector designs for use of remote self-folding origami
+    \item Explored the topic of self-activating polymers using the Sun's energy
+    \item Presented to a variety of audiences via symposia and community outreach
   \end{itemize}
   % ----- EXPERIENCE -----
 
@@ -301,5 +323,12 @@
     \item Guided students through ROS2 development to compete in final competition
   \end{itemize}
   % ----- PROJECTS -----
+  % ----- PUBLICATIONS -----
+  \cvsection{Publications}
+
+  \nocite{*}
+
+  \printbibliography[heading=pubtype,title={\printinfo{\faUsers}{Conference Proceedings}},type=inproceedings]
+  % ----- PUBLICATIONS -----
 \end{paracol}
 \end{document}
