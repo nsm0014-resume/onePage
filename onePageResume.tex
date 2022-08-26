@@ -1,16 +1,4 @@
-%%%%%%%%%%%%%%%%%
-% This is an sample CV template created using altacv.cls
-% (v1.3, 10 May 2020) written by LianTze Lim (liantze@gmail.com). Now compiles with pdfLaTeX, XeLaTeX and LuaLaTeX.
-% This fork/modified version has been made by Nicolás Omar González Passerino (nicolas.passerino@gmail.com, 15 Oct 2020)
-%
-%% It may be distributed and/or modified under the
-%% conditions of the LaTeX Project Public License, either version 1.3
-%% of this license or (at your option) any later version.
-%% The latest version of this license is in
-%%    http://www.latex-project.org/lppl.txt
-%% and version 1.3 or later is part of all distributions of LaTeX
-%% version 2003/12/01 or later.
-%%%%%%%%%%%%%%%%
+
 
 %% If you need to pass whatever options to xcolor
 \PassOptionsToPackage{dvipsnames}{xcolor}
@@ -35,7 +23,7 @@
 %% See http://texdoc.net/pkg/fontawesome5 and http://texdoc.net/pkg/academicons for full list of symbols. You MUST compile with XeLaTeX or LuaLaTeX if you want to use academicons.
 
 % Change the page layout if you need to
-\geometry{left=1.2cm,right=1.2cm,top=0.75cm,bottom=0.75cm,columnsep=0.75cm}
+\geometry{left=0.75cm,right=0.75cm,top=0.75cm,bottom=0.75cm,columnsep=0.75cm}
 
 % The paracol package lets you typeset columns of text in parallel
 \usepackage{paracol}
@@ -117,7 +105,7 @@
   %\medium{nicolasomar}
   %% You MUST add the academicons option to \documentclass, then compile with LuaLaTeX or XeLaTeX, if you want to use \orcid or other academicons commands.
   % \orcid{0000-0000-0000-0000}
-  %% You can add your own arbtrary detail with
+  %% You can add your own arbitrary detail with
   %% \printinfo{symbol}{detail}[optional hyperlink prefix]
   % \printinfo{\faPaw}{Hey ho!}[https://example.com/]
   %% Or you can declare your own field with
@@ -128,10 +116,10 @@
 
 \makecvheader
 %% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
-\AtBeginEnvironment{itemize}{\small}
+% \AtBeginEnvironment{itemize}{\small}
 
 %% Set the left/right column width ratio to 6:4.
-\columnratio{0.25}
+\columnratio{0.20}
 
 % Start a 2-column paracol. Both the left and right columns will automatically
 % break across pages if things get too long.
@@ -155,6 +143,7 @@
 
   \cvtag{Flightstream}
   \cvtag{NPSS}
+
   \cvtag{Solidworks}
   \cvtag{VSP}
 
@@ -177,6 +166,7 @@
 
   % ----- LEARNING -----
   \cvsection{Learning}
+
   \cvtag{Filtering Techniques}
 
   \cvtag{Non-linear Modeling}
@@ -184,7 +174,8 @@
   \cvtag{Optical Feature Detection}
 
   \cvtag{Statistical Analysis}
-  \medskip
+
+  \cvtag{Object-Oriented Prog.}
 
   % ----- LEARNING -----
 
@@ -202,14 +193,15 @@
 
   % ----- REFERENCES -----
   \cvsection{References}
-  \cvref{Dr. David Bevly:
-    Director - GAVLAB}{david-bevly}
+  \cvref{Dr. David Bevly}{Director - GAVLAB}{david-bevly}
   \divider
-
-  \cvref{Dr. Scott Martin: Graduate Advisor}{scott-martin-851b19139}
+  \textcolor{emphasis}{\textbf{Dr. Scott Martin}}\par
+  {Graduate Advisor}\par
+  \begin{description}[font=\color{accent},style=multiline,leftmargin=1.35em,align=left]
+    \item[\small\normalfont\faLinkedin]\href{https://linkedin.com/in/scott-martin-851b19139}{scott-martin}
+  \end{description}
   \divider
-
-  \cvref{Dr. Chris Basgier: Director - University Writing}{cbasgier}
+  \cvref{Dr. Chris Basgier}{Director - University Writing}{cbasgier}
   \smallskip
   % ----- REFERENCES -----
 
@@ -251,20 +243,21 @@
   \begin{itemize}
     \item{Research and develop a collaborative GNSS and LEO satellite constellation program for indoor positioning using MATLAB and C++}
     \item{Create motion profiles for a wide-range of flight vehicles to work with GNSS/INS sensor fusion algorithms}
+    \item{Collaborate and manage sponsored work using a secure GitLab server to distribute tasks and issues}
   \end{itemize}
   \divider
-
-  \cvevent{Graduate Research Assistant }{| Vehicle Systems, Dynamics, and Design Laboratory}{May 2021 -- Dec 2021 }{Auburn University}
+  \cvevent{Graduate Research Assistant }{| Vehicle Systems, Dynamics, and Design Lab}{May 2021 -- Dec 2021 }{Auburn University}
   \begin{itemize}
-    \item Developed a generalized parametric sizing tool that optimizes, analyzes, and generates conventional and novel flight vehicles
-    \item Created 4-D, re-configurable cockpit displays using Adobe Photoshop, Flightgear, and XML providing simplified vehicle operations for next-generation pilots
+    \item{Developed a generalized parametric sizing tool that optimizes, analyzes, and generates conventional and novel flight vehicles}
+    \item{Analyzed conventional and novel flight vehicle configurations for their aerodynamic capabilities through use of Flightstream}
+    \item{Created 4-D, re-configurable cockpit displays using Adobe Photoshop, Flightgear, and XML providing simplified vehicle operations for next-generation pilots}
   \end{itemize}
   \divider
-
   \cvevent{Lead Writing Consultant}{| Miller Writing Center}{Aug 2018 -- May 2021}{Auburn University}
   \begin{itemize}
-    \item Led team meetings of 6-8 consultants through a professional development practicum and trained new consultants via mock consultations and feedback activities
-    \item Analyzed clients' writing with directive and non-directive feedback during hour-long appointments
+    \item{Led team meetings of 6-8 consultants through a professional development practicum and trained new consultants via mock consultations and feedback activities}
+    \item{Analyzed clients' writing with directive and non-directive feedback during hour-long, 1-on-1 appointments}
+    \item{Evaluated and interviewed applicants as member of the hiring committee}
   \end{itemize}
   % ----- EXPERIENCE -----
 

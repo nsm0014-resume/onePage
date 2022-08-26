@@ -269,7 +269,7 @@
 
 % Fork: Two bigskip tags added for better section separation
 \newcommand{\cvsection}[2][]{%
-  \nointerlineskip\bigskip%  %% bugfix in v1.6.2
+  \nointerlineskip\medskip%  %% bugfix in v1.6.2
   \ifstrequal{#1}{}{}{\marginpar{\vspace*{\dimexpr1pt-\baselineskip}\raggedright\input{#1}}}%
   {\color{heading}\cvsectionfont\MakeUppercase{#2}}\\[-1ex]%
   {\color{headingrule}\rule{\linewidth}{2pt}\par}\medskip
@@ -381,10 +381,11 @@
 }
 
 % Fork: CV reference tag has been modified to accept only linkedin accounts instead mail. It can be modified easily in case you need to display other type of contact
-\newcommand{\cvref}[2]{%
+\newcommand{\cvref}[3]{%
   \textcolor{emphasis}{\textbf{#1}}\par
+{#2}\par
   \begin{description}[font=\color{accent},style=multiline,leftmargin=1.35em,align=left]
-    \item[\small\normalfont\faLinkedin]\href{https://linkedin.com/in/#2}{#2}
+    \item[\small\normalfont\faLinkedin]\href{https://linkedin.com/in/#3}{#3}
   \end{description}
 }
 
