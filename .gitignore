@@ -11,3 +11,5 @@
 *.blg
 *.bcf
 *.xml
+*.bbl
+*.synctex(busy)
